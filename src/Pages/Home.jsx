@@ -25,7 +25,7 @@ export default function Home() {
                 </p>
                 <div className="flex justify-start">
                   <button
-                    className="flex items-center cursor-pointer border border-white
+                    className="flex bg-[#6D98BA] items-center cursor-pointer border border-white
                    text-white px-8 py-2 rounded-lg bordertransition-all duration-300 text-lg"
                   >
                     <a href="#contact">
