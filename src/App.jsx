@@ -1,4 +1,4 @@
-import "./App.css";
+import "./index.css";
 import Home from "./Pages/Home.jsx";
 import Skills from "./Pages/Skills.jsx";
 import Projects from "./Pages/Projects.jsx";

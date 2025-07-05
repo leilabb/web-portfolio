@@ -1,5 +1,18 @@
 @import "tailwindcss";
 
+@theme {
+  --color-background: #191919;
+  --color-card: #262626;
+  --color-link: #4a9eff;
+  --color-accent: #9d5c63;
+  --color-accentHover: #70393e;
+  --color-secondAccent: #6b7280;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -24,15 +37,6 @@ body,
   padding: 0;
   box-sizing: border-box;
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-/* a:hover {
-  color: #535bf2;
-} */
 
 body {
   margin: 0;

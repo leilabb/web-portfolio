@@ -5,23 +5,27 @@ const ProjectCard = ({ title, description, tags, link, githubLink }) => (
     <p className="text-gray-300 mb-4 leading-relaxed flex-grow">
       {description}
     </p>
-    <a href={link} target="_blank">
+    <a href={link} className="text-link" target="_blank">
       <button
-        className="flex w-fit items-center cursor-pointer border border-white
-                   text-white mt-4 px-8 py-2 rounded-full bordertransition-all duration-300 text-sm"
+        className="flex bg-secondAccent hover:bg-card hover:text-white w-fit items-center cursor-pointer
+                   text-background mt-4 px-8 py-2 rounded-full bordertransition-all duration-300 text-sm"
       >
         <span> Go To Project</span>
       </button>
     </a>
-    <a className="md:text-sm" href={githubLink}>
-      <p className="block hover:underline m-2 pb-2">See project on Github</p>{" "}
+    <a
+      className="md:text-sm block text-link hover:underline m-2 pb-2"
+      href={githubLink}
+      target="_blank"
+    >
+      Or see project on Github
     </a>
 
-    <div className="mt-auto">
+    <div className="mt-auto flex">
       {tags.map((tag, index) => (
         <span
           key={index}
-          className="inline-block bg-gray-600 text-gray-300 mx-2 px-3 py-1 rounded-full text-sm"
+          className="inline-block bg-accent text-gray-300 mx-1 px-3 py-1 rounded-full text-sm"
         >
           {tag}
         </span>
@@ -64,6 +68,7 @@ const Projects = () => {
               description={project.description}
               tags={project.tags}
               link={project.link}
+              githubLink={project.githubLink}
             />
           ))}
         </div>
