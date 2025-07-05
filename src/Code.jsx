@@ -136,34 +136,4 @@ const Navigation = () => {
   );
 };
 
-// Footer Component
-const Footer = () => (
-  <footer className="border-t border-gray-700 py-8">
-    <div className="max-w-6xl mx-auto px-6 text-center">
-      <p className="text-gray-400">
-        © 2025 Jason Chin. Helping you stay organized and productive.
-      </p>
-    </div>
-  </footer>
-);
-
-// Main Portfolio Component
-const Portfolio = () => {
-  return (
-    <div
-      className="min-h-screen text-white"
-      style={{ backgroundColor: "#282534" }}
-    >
-      <Navigation />
-      <main>
-        <HomeSection />
-        <SkillsSection />
-        <ProjectsSection />
-        <ContactSection />
-      </main>
-      <Footer />
-    </div>
-  );
-};
-
 export default Portfolio;
