@@ -75,19 +75,26 @@ const SkillsSection = () => {
             </div>
           </>
         )}
-        {activeTab === "softSkills" &&
-          SkillsData["softSkills"].map((softSkill) => (
-            <SkillCard key={softSkill.name} name={softSkill.name} />
-          ))}
 
-        {activeTab === "languages" &&
-          SkillsData["languages"].map((language) => (
-            <SkillCard
-              key={language.name}
-              name={language.name}
-              meta={language.level}
-            />
-          ))}
+        {activeTab === "softSkills" && (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {SkillsData["softSkills"].map((softSkill) => (
+              <SkillCard key={softSkill.name} name={softSkill.name} />
+            ))}
+          </div>
+        )}
+
+        {activeTab === "languages" && (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {SkillsData["languages"].map((language) => (
+              <SkillCard
+                key={language.name}
+                name={language.name}
+                meta={language.level}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );
