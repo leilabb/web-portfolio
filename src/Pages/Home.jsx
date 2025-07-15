@@ -14,7 +14,7 @@ export default function Home() {
                 </h2>
                 <p className="text-gray-300 text-xl mb-6 leading-relaxed text-left">
                   I'm from Sweden. I like building impactful functionality and
-                  improving user experiences. In my professional life I have
+                  improving user experiences. In my professional life, I have
                   mostly worked with websites, both on the business side and on
                   the programming side.
                 </p>
